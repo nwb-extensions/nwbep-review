@@ -1,5 +1,5 @@
 name: Submit a NEP to the Technical Advisory Board
-about: NWB Extension Proposals will be publicly reviewed
+description: NWB Extension Proposals will be publicly reviewed
 title: ''
 labels: New Proposal
 assignees: ''
