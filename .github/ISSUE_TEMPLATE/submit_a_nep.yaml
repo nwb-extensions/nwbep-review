@@ -13,7 +13,7 @@ body:
     attributes:
       label: NEP Title
       description: What is the NEP number and title? Please also use this as the title for this issue ticket.
-      placeholder: ex. NEP000\: My Awesome Neurodata Type
+      placeholder: "ex. NEP000: My Awesome Neurodata Type"
     validations:
       required: false
   - type: input
