@@ -1,6 +1,6 @@
 # NWB Extension Proposal (NEP)
 
-This repository is used to propose and manage the review of NEPs. NEPs provide a formal process for proposing and assesing extensions to the NWB data standard. 
+This repository is used to propose and manage the review of NEPs. NEPs provide a formal process for proposing and assessing extensions to the NWB data standard. 
 
 ## Submit a NEP
 
