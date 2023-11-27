@@ -13,7 +13,7 @@ body:
       description: What is the NEP number and title? Please also use this as the Title in the textbox above.
       placeholder: "ex. NEP001: Events and TTL Data"
     validations:
-      required: false
+      required: true
   - type: input
     id: nep_link
     attributes:
