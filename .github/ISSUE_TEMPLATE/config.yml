@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: NEP Review Process
+  - name: NWBEP Review Process
     url: https://docs.google.com/document/d/1GbqDdsDsfJMkVGyzQUZwQKX6EOiA2IBEkgd2LtMK_Ik/edit#heading=h.a91wmumjusp8
-    about: Learn about how extensions to the NWB core standard are proposed, evaluated, reviewed, and accepted
+    about: Learn about how enhancements to the NWB core standard are proposed, evaluated, reviewed, and accepted
   - name: NWB Help Desk
     url: https://github.com/NeurodataWithoutBorders/helpdesk/discussions
-    about: Ask questions about the NEP process
+    about: Ask questions about the NWBEP process
