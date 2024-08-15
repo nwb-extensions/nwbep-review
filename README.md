@@ -8,7 +8,7 @@ Fill out [**this GitHub Issues form**](https://github.com/nwb-extensions/nwbep-r
 
 ## The Review Process
 
-Read the [NWB Proposal Review Process Policy](https://docs.google.com/document/d/1GbqDdsDsfJMkVGyzQUZwQKX6EOiA2IBEkgd2LtMK_Ik/edit#heading=h.a91wmumjusp8) to learn about how extensions to the NWB core standard are proposed, evaluated, reviewed, and accepted.
+Read the [NWB Proposal Review Process Policy](https://docs.google.com/document/d/1GbqDdsDsfJMkVGyzQUZwQKX6EOiA2IBEkgd2LtMK_Ik/edit#heading=h.a91wmumjusp8) to learn about how enhancements to the NWB core standard are proposed, evaluated, reviewed, and accepted.
 
 **Questions?** Ask questions about the NWBEP process in the [NWB Help Desk](https://github.com/NeurodataWithoutBorders/helpdesk/discussions).
 
