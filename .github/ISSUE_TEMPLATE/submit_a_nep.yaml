@@ -1,32 +1,32 @@
-name: Submit a NEP to the Technical Advisory Board
-description: NWB Extension Proposals will be publicly reviewed by the NWB TAB
+name: Submit a NWBEP to the Technical Advisory Board
+description: NWB Enhancement Proposals will be publicly reviewed by the NWB TAB
 labels: New Proposal
 body:
   - type: markdown
     attributes:
       value: |
-        ## Thank you for submitting an NWB Extension Proposal to the Technical Advisory Board!
+        ## Thank you for submitting an NWB Enhancement Proposal to the Technical Advisory Board!
   - type: input
     id: name
     attributes:
-      label: NEP Title
-      description: What is the NEP number and title? Please also use this as the Title in the textbox above.
-      placeholder: "ex. NEP001: Events and TTL Data"
+      label: NWBEP Title
+      description: What is the NWBEP number and title? Please also use this as the Title in the textbox above.
+      placeholder: "ex. NWBEP001: Events and TTL Data"
     validations:
       required: true
   - type: input
-    id: nep_link
+    id: nwbep_link
     attributes:
-      label: Link to NEP
-      description: Provide a link to the publicly accessible Google Doc or other doc with the NEP.
+      label: Link to NWBEP
+      description: Provide a link to the publicly accessible Google Doc or other doc with the NWBEP.
       placeholder: "ex. https://docs.google.com/..."
     validations:
       required: true
   - type: textarea
     id: summary
     attributes:
-      label: NEP Summary
-      description: Copy and paste the NEP summary here.
+      label: NWBEP Summary
+      description: Copy and paste the NWBEP summary here.
     validations:
       required: true
   - type: input
