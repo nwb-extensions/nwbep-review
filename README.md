@@ -18,6 +18,6 @@ Read the [NWB Proposal Review Process Policy](https://docs.google.com/document/d
 |--------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 |NWBEP001| Events and TTL Data | Ryan Ly | [google doc](https://docs.google.com/document/d/1qcsjyFVX9oI_746RdMoDdmQPu940s0YtDjb1en1Xtdw/edit?usp=sharing)  |
 |NWBEP002| Probe devices and channel mapping in extracellular ephys  | Alessio Buccino |  [google doc](https://docs.google.com/document/d/1q-haFEEHEgZpRoCzzQsuSWCKN4QfMsTzLnlptLaf-yw/edit?usp=sharing) |
-|NWVEP003| Multichannel volumetric imaging  | Daniel Sprague |  [google doc](https://docs.google.com/document/d/1IhhKwpPoXzPZTNXH7zCU_At4Py17aNJ6lYP_XaGX0wo/edit?usp=sharing) |
+|NWBEP003| Multichannel volumetric imaging  | Daniel Sprague |  [google doc](https://docs.google.com/document/d/1IhhKwpPoXzPZTNXH7zCU_At4Py17aNJ6lYP_XaGX0wo/edit?usp=sharing) |
 
 
