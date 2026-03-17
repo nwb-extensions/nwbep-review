@@ -1,0 +1,69 @@
+# Makefile.docflow-common — shared rules for Google Doc download & conversion
+#
+# Include from a per-NWBEP doc/Makefile after setting:
+#   NWBEP   = NWBEP004           # used for filenames
+#   DOC_ID  = 1-dVEBuac...       # Google Doc ID
+#
+# Optional overrides (with defaults):
+#   PANDOC  = pandoc
+#   TOOLS   = ../../tools
+#
+# Usage:
+#   make              # download + convert
+#   make refresh      # force re-download and reconvert
+#   make comments     # extract inline comments from .docx
+#   make clean        # remove all generated files
+#
+# Designed for docflow-style version tracking:
+#   1. `make refresh` to get latest snapshot
+#   2. `git diff $(NWBEP).md` to see what changed
+#   3. `git add -u && git commit` to record the snapshot
+
+TOOLS  ?= ../../tools
+PANDOC ?= pandoc
+
+EXPORT_URL = https://docs.google.com/document/d/$(DOC_ID)/export
+
+.PHONY: all clean download convert comments refresh
+
+all: download convert
+
+# --- Download ---
+
+$(NWBEP).docx:
+	curl -L -o $@ "$(EXPORT_URL)?format=docx"
+
+$(NWBEP).pdf:
+	curl -L -o $@ "$(EXPORT_URL)?format=pdf"
+
+download: $(NWBEP).docx $(NWBEP).pdf
+
+# --- Convert ---
+
+# pandoc produces clean GFM with proper headings, tables, and links.
+# --extract-media=./ pulls embedded images into media/ for diffing.
+$(NWBEP).md: $(NWBEP).docx
+	$(PANDOC) -f docx -t gfm --wrap=none --extract-media=./ -o $@ $<
+
+convert: $(NWBEP).md
+
+# --- Comments ---
+
+# Google Docs exports preserve unresolved comments in word/comments.xml.
+# Resolved comments are NOT preserved — only unresolved ones appear.
+$(NWBEP)_comments.json: $(NWBEP).docx
+	python3 $(TOOLS)/extract_comments.py $< > $@
+
+comments: $(NWBEP)_comments.json
+
+# --- Maintenance ---
+
+# Force re-download (the Google Doc may have changed since last snapshot)
+refresh:
+	rm -f $(NWBEP).docx $(NWBEP).pdf $(NWBEP).md
+	rm -rf media/
+	$(MAKE) all comments
+
+clean:
+	rm -f $(NWBEP).docx $(NWBEP).pdf $(NWBEP).md $(NWBEP)_comments.json
+	rm -rf media/
