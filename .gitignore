@@ -1,0 +1,9 @@
+.claude
+.idea
+*maildir
+
+# Ignore binary builds and media for now
+media/
+*.pdf
+*.docx
+*.log
