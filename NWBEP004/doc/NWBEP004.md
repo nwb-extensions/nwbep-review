@@ -47,9 +47,9 @@ Paul Adkisson \<[<u>paul.adkisson@catalystneuro.com</u>](mailto:paul.adkisson@ca
 >
 > [6.3. NDX-MICROSCOPY Version 0.1.0 (Date) 19](#ndx-ophys-devices-version-0.2.0-jun-3-2025)
 
-[**7. References 19**](#references)
+[**7. References 19**](#appendix)
 
-[**8. Appendix 19**](#appendix)
+[**8. Appendix 19**](#_4i7ojhp)
 
 # 
 
@@ -83,7 +83,7 @@ Optical techniques are widely used in neuroscience research to study neural acti
 
 The ndx-ophys-devices extension will enable the description of optical components that can be shared across multiple optical setups in different experiments. This facilitates resource sharing and ensures standardized metadata representation for optical components across all setups.
 
-<img src="./media/image1.png" style="width:6.5in;height:7.47222in" />  
+<img src="./media/image9.png" style="width:6.5in;height:7.47222in" />  
 Experimenters employ various different types of microscopy systems to image neural activity including widefield, light-sheet, confocal, 2-photon, multiphoton, holographic, etc. Currently, users have to choose between TwoPhotonSeries and OnePhotonSeries to represent their time series imaging data, neither of which captures the variety of methods commonly employed. To address these problems we propose a more generic MicroscopySeries with fields to more fully specify which type of microscopy was used.
 
 Researchers frequently opt to analyze their volumetric imaging data in two distinct ways depending on the context: treating each depth plane as a separate, disjoint stream of data OR considering the full imaged volume together during analysis. Currently, users can add a series of 3D images to OnePhotonSeries and TwoPhotonSeries but these TimeSeries still only link to a single ImagingPlane, which does not properly describe the full imaging volume. We propose two new types: PlanarImagingSpace and VolumetricImagingSpace, to facilitate the storage of both 2D and 3D imaging data.
@@ -793,6 +793,8 @@ Groups:
 
 - MicroscopySeries: \[0,..\], optional. MicroscopySeries object(s) each containing imaging data for a single channel.
 
+- MultiPlaneMicroscopyContainer: \[0,..\], optional. MultiPlaneMicroscopyContainer object(s) containing imaging data acquired over several depths.
+
 ***Comparison with current schema:*** The current NWB schema includes TwoPhotonSeries and OnePhotonSeries for storing imaging data. These classes are designed for specific microscopy techniques and lack support for other types of microscopy setup or multi-plane or multi-channel acquisition. The new types provide a more flexible and comprehensive representation of microscopy data, with better support for different acquisition modalities.
 
 ### Segmentation Components
@@ -1383,6 +1385,42 @@ The initial release of the ndx-microscopy extension, including:
 
 - Dan Birman \<[<u>daniel.birman@alleninstitute.org</u>](mailto:daniel.birman@alleninstitute.org)\> - SWE at Allen
 
-# 8. References
+# 8. Appendix
 
-# 9. Appendix
+## 8.1 ndx-ophys-devices relation diagrams
+
+### [<u>Molecular tools</u>](https://github.com/catalystneuro/ndx-ophys-devices?tab=readme-ov-file#molecular-tools)
+
+<img src="./media/image5.png" style="width:6.5in;height:7.1291in" />
+
+### [<u>Photodetector and ExcitationSource</u>](https://github.com/catalystneuro/ndx-ophys-devices?tab=readme-ov-file#device-models-and-devices)
+
+<img src="./media/image3.png" style="width:7.14063in;height:7.79289in" />
+
+### [<u>Optical Fiber and Objective Lens</u>](https://github.com/catalystneuro/ndx-ophys-devices?tab=readme-ov-file#optical-fiber-and-objective-lens)
+
+<img src="./media/image8.png" style="width:7.18181in;height:6.4337in" />
+
+### [<u>Optical Filters and Dichroic Mirrors</u>](https://github.com/catalystneuro/ndx-ophys-devices?tab=readme-ov-file#optical-filters-and-dichroic-mirrors)
+
+<img src="./media/image7.png" style="width:6.97099in;height:6.88162in" />
+
+# 
+
+## 8.2 ndx-microscopy relation diagrams
+
+### [<u>Experiment Metadata Components</u>](https://github.com/catalystneuro/ndx-microscopy/tree/v0.4.x?tab=readme-ov-file#experiment-metadata-components)
+
+<img src="./media/image4.png" style="width:6.71354in;height:7.56322in" />
+
+### [<u>Illumination Pattern Components</u>](https://github.com/catalystneuro/ndx-microscopy/tree/v0.4.x?tab=readme-ov-file#illumination-pattern-components)
+
+<img src="./media/image1.png" style="width:6.5in;height:5in" />
+
+### [<u>Microscopy Series and Imaging Space Components</u>](https://github.com/catalystneuro/ndx-microscopy/tree/v0.4.x?tab=readme-ov-file#microscopy-series-and-imaging-space-components)
+
+<img src="./media/image2.png" style="width:7.26731in;height:5.20454in" />
+
+### [<u>Segmentation Components</u>](https://github.com/catalystneuro/ndx-microscopy/tree/v0.4.x?tab=readme-ov-file#segmentation-components)
+
+### <img src="./media/image6.png" style="width:7.38953in;height:5.13162in" />
