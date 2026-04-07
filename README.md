@@ -10,6 +10,10 @@ Create a copy of this [NWBEP Template](https://docs.google.com/document/d/1Kqgoc
 
 Fill out [**this GitHub Issues form**](https://github.com/nwb-extensions/nwbep-review/issues/new?assignees=&labels=New+Proposal&projects=&template=submit_a_nep.yaml) to submit a NWBEP to the NWB Technical Advisory Board for review.
 
+## Review Form Template
+
+A [Copier](https://copier.readthedocs.io/) template for generating pre-filled review forms is available in [`templates/`](templates/). See [`templates/README.md`](templates/README.md) for usage instructions.
+
 ## The Review Process
 
 Read the [NWB Proposal Review Process Policy](https://docs.google.com/document/d/1GbqDdsDsfJMkVGyzQUZwQKX6EOiA2IBEkgd2LtMK_Ik/edit#heading=h.a91wmumjusp8) to learn about how enhancements to the NWB core standard are proposed, evaluated, reviewed, and accepted.

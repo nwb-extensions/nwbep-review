@@ -1,0 +1,42 @@
+# Copier configuration for NWBEP Review Form
+
+# Questions for the review form
+nwbep_number:
+  type: str
+  help: "NWBEP number (e.g., 001, 002, 003)"
+  placeholder: "00N"
+
+nwbep_title:
+  type: str
+  help: "Title of the NWBEP being reviewed"
+  placeholder: "NWBEP Title"
+
+reviewer_name:
+  type: str
+  help: "Your full name"
+  placeholder: "John Doe"
+
+reviewer_affiliation:
+  type: str
+  help: "Your institutional affiliation"
+  placeholder: "University/Organization"
+
+reviewer_orcid:
+  type: str
+  help: "Your ORCID identifier (e.g., 0000-0000-0000-0000)"
+  placeholder: "0000-0000-0000-0000"
+  default: ""
+
+# Metadata
+_templates_suffix: .jinja
+_envops:
+  block_start_string: "{%"
+  block_end_string: "%}"
+  variable_start_string: "{{"
+  variable_end_string: "}}"
+  comment_start_string: "{#"
+  comment_end_string: "#}"
+  keep_trailing_newline: true
+
+# Output configuration
+_subdirectory: template
