@@ -16,10 +16,11 @@
 |------|-------|
 | 2025-05-30 | Alessandra submitted updated NWBEP004 document for external review |
 | 2025-06-16 | YOH sent review invitations (CS, RD, GM, Dan Birman) |
-| 2025-09-30 | Virtual meeting with reviewers and Alessandra |
+| 2025-09-30 | Virtual meeting with reviewers and Alessandra (video: `2025-09-30_NWB-TAB-NWBEP004-review.mp4`, available from @yarikoptic on request) |
 | 2025-10-09 | Reviews posted to [nwbep-review PR #7](https://github.com/nwb-extensions/nwbep-review/pull/7) |
 | 2025-12-03 | Alessandra delivered revised Google Doc (v0.4.0) and PRs addressing feedback |
-| 2026-03-17 | **Today** — ~3.5 months since revision, no re-review initiated |
+| 2026-03-17 | @yarikoptic emailed Alessandra with [clarification questions](./notes/20260317-questions.md) |
+| 2026-03-26 | Alessandra completed her changes in response to reviews |
 
 ---
 
@@ -75,8 +76,8 @@
 |------|-------|
 | 2025-06-16 | YOH sent invitation |
 | 2025-06-16 | Dan replied: "Yes I can help review for this proposal" |
-| 2025-09-30 | Accepted calendar invitation for review meeting |
-| 2025-10-01 | YOH sent template pointers |
+| 2025-09-30 | Participated in review panel meeting |
+| 2025-10-02 | YOH requested review submission |
 
 **Action needed**: Re-invite Dan Birman to submit review alongside the re-review round.
 
@@ -124,4 +125,4 @@ The .docx export (downloaded 2026-03-17) contains only 1 unresolved comment (fro
 
 ---
 
-**Next step**: Post clarification questions to Alessandra (via PR or email) before inviting reviewers for re-review.
+**Next steps**: re-invite reviewers for re-review round.
