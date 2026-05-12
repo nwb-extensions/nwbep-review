@@ -4,7 +4,7 @@
 
 - **Name**: Robin Dard
 - **Affiliation**: EPFL
-- **ORCID**: {ORCID} 
+- **ORCID**: 0009-0000-6221-0407
 
 ### 1. Significance and impact
 
@@ -12,7 +12,7 @@
 
 - [x] **Significance:** *Does the NWBEP address an important problem or barrier to progress? Does the NWBEP provide functionality for others in the neurophysiology community besides the original proposers? Have different types of potential users from the community (e.g., different technical skill levels, language proficiency, use cases) used the proposed extension or been involved in developing the NWBEP?*  
 - [x] **Impact:** *Does the NWBEP create a sustained, powerful influence on relevant research field(s) and users? Does the NWBEP add well-defined, unique capabilities to NWB?*   
-- [ ] **Alternatives:** *Have alternative solutions been reasonably considered?*
+- [x] **Alternatives:** *Have alternative solutions been reasonably considered?*
 
 #### Comments:
 
