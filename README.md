@@ -29,6 +29,6 @@ Read the [NWBEP: Evaluation Working Group Policy](https://docs.google.com/docume
 |NWBEP001| Events | Ryan Ly | [google doc](https://docs.google.com/document/d/1qcsjyFVX9oI_746RdMoDdmQPu940s0YtDjb1en1Xtdw/edit?usp=sharing)  | [review](https://github.com/nwb-extensions/nwbep-review/issues/4#issuecomment-2536873655) | Released as part of [nwb-schema 2.10.0 (June 18, 2026)](https://github.com/NeurodataWithoutBorders/nwb-schema/releases/tag/2.10.0) and [pynwb 4.0](https://github.com/NeurodataWithoutBorders/pynwb/releases/tag/4.0.0)|
 |NWBEP002| Probe devices and channel mapping in extracellular ephys  | Alessio Buccino |  [google doc](https://docs.google.com/document/d/1q-haFEEHEgZpRoCzzQsuSWCKN4QfMsTzLnlptLaf-yw/edit?usp=sharing) | | |
 |NWBEP003| Multichannel volumetric imaging  | Daniel Sprague |  [google doc](https://docs.google.com/document/d/1IhhKwpPoXzPZTNXH7zCU_At4Py17aNJ6lYP_XaGX0wo/edit?usp=sharing) | | |
-|NWBEP004| Optical Devices and Microscopy  | Alessandra Trapani |  [google doc](https://docs.google.com/document/d/1-dVEBuacvoM3hZk8GeinmQpNF4yh3Uvxz7WOWUpdvFY/edit?usp=sharing) | | TAB review in progress |
+|NWBEP004| Optical Devices and Microscopy  | Alessandra Trapani |  [google doc](https://docs.google.com/document/d/1-dVEBuacvoM3hZk8GeinmQpNF4yh3Uvxz7WOWUpdvFY/edit?usp=sharing) | | TAB review completed, PR against core was invited |
 
 
